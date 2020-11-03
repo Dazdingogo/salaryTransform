@@ -33,7 +33,6 @@ object Main {
   }
   def printDetail(basePath:String): Unit = {
     val baseFile = new File(basePath)
-    //    val baseFile = new File("D:\\360MoveData\\Users\\admin\\Documents\\WeChat Files\\wxid_xif4l5njq69421\\FileStorage\\File\\2020-07")
     val files = baseFile.listFiles()
     for (f <- files if f.getName.endsWith(".txt")) {
       val so = Source.fromFile(f)("gbk")
